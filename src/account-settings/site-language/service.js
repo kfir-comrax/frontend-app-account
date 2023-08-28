@@ -21,6 +21,8 @@ export async function patchPreferences(username, params) {
       headers: { 'Content-Type': 'application/merge-patch+json' },
     });
 
+  window.location.reload();
+
   return params; // TODO: Once the server returns the updated preferences object, return that.
 }
 
